@@ -6,7 +6,8 @@
   "scripts": {
     "build": "echo \"Static site - no build step\"",
     "dev": "netlify dev",
-    "crawl": "python scripts/crawl_byui.py"
+    "crawl": "python scripts/crawl_byui.py",
+    "test:chat": "node scripts/test_chat.js --file scripts/test-prompts.json"
   },
   "repository": {
     "type": "git",
