@@ -202,6 +202,8 @@ exports.handler = async function handler(event) {
           `Here is their question: "${message}"`,
           'Follow these guidelines strictly:',
           loadGuidelines(),
+          'Keep the final answer clear, concise, and free of repeated sentences or ideas.',
+          'Do not include citations or links in the body text—the system will append source links afterwards.',
           'This is their question again in case you need to restate it clearly.',
         ].join('\n\n'),
       },
@@ -236,16 +238,30 @@ exports.handler = async function handler(event) {
         .filter(Boolean)
         .join('\n\n') || "I couldn't generate a response right now, but I'm still here to help.";
 
-    const sources = knowledgeDocs.map((doc) => ({
-      title: doc.title,
-      url: doc.primaryUrl,
-      output: doc.output,
-    }));
+    const uniqueSourcesMap = new Map();
+    knowledgeDocs.forEach((doc) => {
+      const url = doc.primaryUrl || 'https://www.byui.edu/international-services/';
+      if (!uniqueSourcesMap.has(url)) {
+        uniqueSourcesMap.set(url, {
+          title: doc.title || doc.output || 'Source',
+          url,
+          output: doc.output,
+        });
+      }
+    });
+
+    const uniqueSources = Array.from(uniqueSourcesMap.values());
+
+    const sourcesSection = uniqueSources.length
+      ? ['Sources:', ...uniqueSources.map((doc) => `- [${doc.title}](${doc.url})`)].join('\n')
+      : '';
+
+    const replyWithSources = sourcesSection ? `${reply.trim()}\n\n${sourcesSection}` : reply.trim();
 
     return {
       statusCode: 200,
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ reply, sources }),
+      body: JSON.stringify({ reply: replyWithSources, sources: uniqueSources }),
     };
   } catch (error) {
     console.error('Chat handler error:', error);
