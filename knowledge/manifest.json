@@ -1,0 +1,200 @@
+{
+  "last_run": "2025-11-14T19:26:57Z",
+  "documents": {
+    "travel": {
+      "title": "CS: Travel",
+      "output": "knowledge/travel.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/travel-1",
+          "title": "Travel",
+          "hash": "50508f5d480379d5247d2957f7851d4a949308837446fbdd016ab3f188caf3fd"
+        }
+      ]
+    },
+    "maintaining-f-1-visa-status": {
+      "title": "CS: Maintaining F-1 Visa Status",
+      "output": "knowledge/maintaining-f-1-visa-status.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/maintaining-f-1-visa-status#regaining-f-1-status",
+          "title": "Maintaining F-1 Visa Status",
+          "hash": "e0bb3500da85f1a3146687f74baaef1b08043ed09b0050da4a62bcf1a578ebb9"
+        }
+      ]
+    },
+    "employment": {
+      "title": "CS: Employment",
+      "output": "knowledge/employment.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/employment-1",
+          "title": "Employment",
+          "hash": "e7abf562c849b1064b9e67e1cac4298fc86c35bd67a58cb7ba871656a5d5e266"
+        }
+      ]
+    },
+    "internships": {
+      "title": "CS: Internships",
+      "output": "knowledge/internships.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/internships-1",
+          "title": "Internships",
+          "hash": "d09faab1685eac4216ad8a8eff382fdeacdf921023a5a507a38b00aaa93eb5ed"
+        }
+      ]
+    },
+    "graduation": {
+      "title": "GS: Graduation",
+      "output": "knowledge/graduation.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/graduation",
+          "title": "Graduation",
+          "hash": "5ad187afdb7b81569374e4551b872c28d7f3c27d52003c9496486e8762fa1050"
+        }
+      ]
+    },
+    "opt-optional-practical-training": {
+      "title": "GS: OPT (Optional Practical Training)",
+      "output": "knowledge/opt-optional-practical-training.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/optional-practical-training-opt",
+          "title": "Optional Practical Training (OPT)",
+          "hash": "aad07fa8d63979e8c648c7d6ad82d901287139de0a506ffb77505f31a36aa376"
+        }
+      ]
+    },
+    "stem-opt": {
+      "title": "GS: STEM OPT",
+      "output": "knowledge/stem-opt.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/stem-opt",
+          "title": "STEM OPT",
+          "hash": "c6b6ff35c1b4c2dc069a50c0c5082b080b43e1d06afaa5faaaef1a8011f9f17c"
+        }
+      ]
+    },
+    "deposit-refund": {
+      "title": "GS: Deposit Refund",
+      "output": "knowledge/deposit-refund.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/deposit-refund",
+          "title": "Deposit Refund",
+          "hash": "5a407bfd34b821df14a0cea773a2b3895ceaea432051fc4d61d3977c20ea03d9"
+        }
+      ]
+    },
+    "transferring-schools": {
+      "title": "GS: Transferring Schools",
+      "output": "knowledge/transferring-schools.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/transferring-schools",
+          "title": "Transferring Schools",
+          "hash": "a5a21e2e29a026aa0c521bc32571515bda9ae7151988848f28b7c647737f36c5"
+        }
+      ]
+    },
+    "form-i-20": {
+      "title": "NS: Form I-20",
+      "output": "knowledge/form-i-20.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/international-services/international-student-resources/form-i",
+          "title": "Form I-20",
+          "hash": "924107261fd43148825d4ede941037cac2b33c565aa221cf9b3a9db2b0110da8"
+        }
+      ]
+    },
+    "finances": {
+      "title": "NS: Finances",
+      "output": "knowledge/finances.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/admissions/apply/international-students/finances",
+          "title": "Finances",
+          "hash": "eacf7821547329bbd8ee7ca2f4def081164adaa7898b411bbf5cd9dc66a60f72"
+        }
+      ]
+    },
+    "tuition-and-cost-of-attendance": {
+      "title": "NS: Tuition and Cost of Attendance",
+      "output": "knowledge/tuition-and-cost-of-attendance.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/financial-aid/tuition-and-cost-of-attendance",
+          "title": "Tuition & Cost of Attendance",
+          "hash": "9760f583404fa34110c3df1c100b26b034d0fb6914607f5ed91017f91480f0a1"
+        }
+      ]
+    },
+    "english-requirements": {
+      "title": "NS: English Requirements",
+      "output": "knowledge/english-requirements.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/admissions/apply/international-students/english-requirements",
+          "title": "English Proficiency Requirements",
+          "hash": "7a80f539b0d11d02fcd63379e3e72261c5cb61f2a94985b685042780201ae712"
+        }
+      ]
+    },
+    "step-by-step-application-process": {
+      "title": "NS: Step by Step Application Process",
+      "output": "knowledge/step-by-step-application-process.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/admissions/apply/international-students/application-process",
+          "title": "Application Process",
+          "hash": "503aae68fcd32b7f1586cd620c864463c6dc8f2dcc7be8463b9e6a7e89027c5b"
+        }
+      ]
+    },
+    "academic-evaluation": {
+      "title": "NS: Academic Evaluation",
+      "output": "knowledge/academic-evaluation.md",
+      "last_refreshed": "2025-11-14T19:26:57Z",
+      "page_count": 1,
+      "pages": [
+        {
+          "url": "https://www.byui.edu/admissions/apply/international-students/academic-evaluation",
+          "title": "Academic Evaluation",
+          "hash": "87b621031d29227989bdc6e832a0b7a218952099306556ebed2126bab4cab8f8"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>International Services Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+  <body class="chatbot-page">
+    <header class="chatbot-page__header">
+      <a class="chatbot-page__back" href="index.html">&#8592; Back to Resume</a>
+      <span class="chatbot-page__tag">International Services Labs</span>
+    </header>
+
+    <main class="chatbot-page__main">
+      <section class="chat-interface" aria-live="polite">
+        <div class="chat-interface__intro">
+          <p class="chat-interface__eyebrow">Projects &amp; Prototypes</p>
+          <h1>International Services Chatbot</h1>
+          <p>
+            This page is wired for a Gemini-powered assistant. Hook it up to your Node/Go/Python service, stream responses back, and the UI
+            will render a knowledge-aware chat that feels native to your team.
+          </p>
+          <div class="chat-interface__status" data-status aria-live="polite">Ready when your knowledge service is online.</div>
+        </div>
+
+        <div class="chat-log" id="chat-log" aria-label="Conversation" role="log"></div>
+
+        <form class="chat-form" id="chat-form" autocomplete="off">
+          <label class="chat-form__label" for="chat-input">Ask anything about international services</label>
+          <div class="chat-form__field">
+            <input
+              id="chat-input"
+              class="chat-form__input"
+              type="text"
+              name="prompt"
+              placeholder="Try &quot;What documents are required to onboard a new country?&quot;"
+              required
+            />
+            <button class="chat-form__button" id="chat-submit" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        var chatLog = document.getElementById('chat-log');
+        var chatForm = document.getElementById('chat-form');
+        var chatInput = document.getElementById('chat-input');
+        var submitBtn = document.getElementById('chat-submit');
+        var statusEl = document.querySelector('[data-status]');
+        var history = [];
+
+        if (!chatForm || !chatLog) return;
+
+        function appendMessage(role, content, options) {
+          var cfg = options || {};
+          var message = document.createElement('div');
+          message.className = 'chat-message chat-message--' + role;
+
+          var bubble = document.createElement('div');
+          bubble.className = 'chat-message__bubble';
+          bubble.textContent = content;
+          message.appendChild(bubble);
+
+          chatLog.appendChild(message);
+          chatLog.scrollTop = chatLog.scrollHeight;
+
+          if (cfg.persist !== false) {
+            history.push({ role: role, content: content });
+            if (history.length > 30) {
+              history = history.slice(history.length - 30);
+            }
+          }
+        }
+
+        function setStatus(text, isBusy) {
+          if (statusEl) {
+            statusEl.textContent = text;
+            statusEl.dataset.state = isBusy ? 'busy' : 'idle';
+          }
+
+          if (submitBtn) {
+            submitBtn.disabled = Boolean(isBusy);
+          }
+
+          if (chatInput) {
+            chatInput.disabled = Boolean(isBusy);
+            if (!isBusy) {
+              chatInput.focus();
+            }
+          }
+        }
+
+        chatForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+          if (!chatInput) return;
+
+          var prompt = chatInput.value.trim();
+          if (!prompt) return;
+
+          appendMessage('user', prompt);
+          chatInput.value = '';
+          setStatus('Connecting to the Gemini service...', true);
+
+          fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: prompt, history: history }),
+          })
+            .then(function (response) {
+              if (!response.ok) {
+                throw new Error('Network error');
+              }
+              return response.json();
+            })
+            .then(function (data) {
+              var reply = (data && (data.reply || data.answer || data.content)) || 'Thanks for your question! I will follow up shortly.';
+              appendMessage('assistant', reply);
+              setStatus('Ready for the next question.', false);
+            })
+            .catch(function () {
+              appendMessage('assistant', 'I cannot reach the knowledge service right now. Try again once the backend is online.', {
+                persist: false,
+              });
+              setStatus('Offline - waiting for your Gemini worker.', false);
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>

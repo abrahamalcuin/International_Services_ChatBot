@@ -1,0 +1,109 @@
+{
+  "documents": [
+    {
+      "category": "Current Students",
+      "title": "CS: Travel",
+      "output": "knowledge/travel.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/travel-1"]
+    },
+    {
+      "category": "Current Students",
+      "title": "CS: Maintaining F-1 Visa Status",
+      "output": "knowledge/maintaining-f-1-visa-status.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/maintaining-f-1-visa-status#regaining-f-1-status"]
+    },
+    {
+      "category": "Current Students",
+      "title": "CS: Employment",
+      "output": "knowledge/employment.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/employment-1"]
+    },
+    {
+      "category": "Current Students",
+      "title": "CS: Internships",
+      "output": "knowledge/internships.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/internships-1"]
+    },
+    {
+      "category": "Graduating Students",
+      "title": "GS: Graduation",
+      "output": "knowledge/graduation.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/graduation"]
+    },
+    {
+      "category": "Graduating Students",
+      "title": "GS: OPT (Optional Practical Training)",
+      "output": "knowledge/opt-optional-practical-training.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/optional-practical-training-opt"]
+    },
+    {
+      "category": "Graduating Students",
+      "title": "GS: STEM OPT",
+      "output": "knowledge/stem-opt.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/stem-opt"]
+    },
+    {
+      "category": "Graduating Students",
+      "title": "GS: Deposit Refund",
+      "output": "knowledge/deposit-refund.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/deposit-refund"]
+    },
+    {
+      "category": "Graduating Students",
+      "title": "GS: Transferring Schools",
+      "output": "knowledge/transferring-schools.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/transferring-schools"]
+    },
+    {
+      "category": "New Students",
+      "title": "NS: Form I-20",
+      "output": "knowledge/form-i-20.md",
+      "pathFragment": "/international-services/international-student-resources/",
+      "urls": ["https://www.byui.edu/international-services/international-student-resources/form-i"]
+    },
+    {
+      "category": "New Students / Admissions",
+      "title": "NS: Finances",
+      "output": "knowledge/finances.md",
+      "pathFragment": "/admissions/",
+      "urls": ["https://www.byui.edu/admissions/apply/international-students/finances"]
+    },
+    {
+      "category": "New Students / Admissions",
+      "title": "NS: Tuition and Cost of Attendance",
+      "output": "knowledge/tuition-and-cost-of-attendance.md",
+      "pathFragment": "/financial-aid/",
+      "urls": ["https://www.byui.edu/financial-aid/tuition-and-cost-of-attendance"]
+    },
+    {
+      "category": "New Students / Admissions",
+      "title": "NS: English Requirements",
+      "output": "knowledge/english-requirements.md",
+      "pathFragment": "/admissions/",
+      "urls": ["https://www.byui.edu/admissions/apply/international-students/english-requirements"]
+    },
+    {
+      "category": "New Students / Admissions",
+      "title": "NS: Step by Step Application Process",
+      "output": "knowledge/step-by-step-application-process.md",
+      "pathFragment": "/admissions/",
+      "urls": ["https://www.byui.edu/admissions/apply/international-students/application-process"]
+    },
+    {
+      "category": "New Students / Admissions",
+      "title": "NS: Academic Evaluation",
+      "output": "knowledge/academic-evaluation.md",
+      "pathFragment": "/admissions/",
+      "urls": ["https://www.byui.edu/admissions/apply/international-students/academic-evaluation"]
+    }
+  ]
+}

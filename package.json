@@ -1,0 +1,22 @@
+{
+  "name": "international_services_chatbot",
+  "version": "1.0.0",
+  "description": "Resume site plus Gemini-powered International Services chatbot",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo \"Static site - no build step\"",
+    "dev": "netlify dev",
+    "crawl": "python scripts/crawl_byui.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrahamalcuin/International_Services_ChatBot.git"
+  },
+  "keywords": [],
+  "author": "Alcuin Abraham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abrahamalcuin/International_Services_ChatBot/issues"
+  },
+  "homepage": "https://github.com/abrahamalcuin/International_Services_ChatBot#readme"
+}
