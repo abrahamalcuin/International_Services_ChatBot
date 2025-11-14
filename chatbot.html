@@ -30,6 +30,16 @@
         <div class="chat-log" id="chat-log" aria-label="Conversation" role="log"></div>
 
         <form class="chat-form" id="chat-form" autocomplete="off">
+          <div class="chat-form__category">
+            <label class="chat-form__label" for="chat-category">I am a</label>
+            <select class="chat-form__select" id="chat-category" name="category">
+              <option value="new students" selected>New Student</option>
+              <option value="current students">Current Student</option>
+              <option value="graduating students">Graduating Student</option>
+            </select>
+            <p class="chat-form__help">We’ll prioritize knowledge that matches your selection.</p>
+          </div>
+
           <label class="chat-form__label" for="chat-input">Ask anything about international services</label>
           <div class="chat-form__field">
             <input
@@ -51,6 +61,7 @@
         var chatLog = document.getElementById('chat-log');
         var chatForm = document.getElementById('chat-form');
         var chatInput = document.getElementById('chat-input');
+        var chatCategory = document.getElementById('chat-category');
         var submitBtn = document.getElementById('chat-submit');
         var statusEl = document.querySelector('[data-status]');
         var history = [];
@@ -84,16 +95,12 @@
             statusEl.dataset.state = isBusy ? 'busy' : 'idle';
           }
 
-          if (submitBtn) {
-            submitBtn.disabled = Boolean(isBusy);
-          }
-
+          if (submitBtn) submitBtn.disabled = Boolean(isBusy);
           if (chatInput) {
             chatInput.disabled = Boolean(isBusy);
-            if (!isBusy) {
-              chatInput.focus();
-            }
+            if (!isBusy) chatInput.focus();
           }
+          if (chatCategory) chatCategory.disabled = Boolean(isBusy);
         }
 
         chatForm.addEventListener('submit', function (event) {
@@ -110,7 +117,11 @@
           fetch('/api/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message: prompt, history: history }),
+            body: JSON.stringify({
+              message: prompt,
+              history: history,
+              category: chatCategory ? chatCategory.value : undefined,
+            }),
           })
             .then(function (response) {
               if (!response.ok) {

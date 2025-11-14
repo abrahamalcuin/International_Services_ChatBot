@@ -1,10 +1,10 @@
 {
-  "last_run": "2025-11-14T19:26:57Z",
+  "last_run": "2025-11-14T19:58:04Z",
   "documents": {
     "travel": {
       "title": "CS: Travel",
       "output": "knowledge/travel.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -17,7 +17,7 @@
     "maintaining-f-1-visa-status": {
       "title": "CS: Maintaining F-1 Visa Status",
       "output": "knowledge/maintaining-f-1-visa-status.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -30,7 +30,7 @@
     "employment": {
       "title": "CS: Employment",
       "output": "knowledge/employment.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -43,7 +43,7 @@
     "internships": {
       "title": "CS: Internships",
       "output": "knowledge/internships.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -56,7 +56,7 @@
     "graduation": {
       "title": "GS: Graduation",
       "output": "knowledge/graduation.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -69,7 +69,7 @@
     "opt-optional-practical-training": {
       "title": "GS: OPT (Optional Practical Training)",
       "output": "knowledge/opt-optional-practical-training.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -82,7 +82,7 @@
     "stem-opt": {
       "title": "GS: STEM OPT",
       "output": "knowledge/stem-opt.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -95,7 +95,7 @@
     "deposit-refund": {
       "title": "GS: Deposit Refund",
       "output": "knowledge/deposit-refund.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -108,7 +108,7 @@
     "transferring-schools": {
       "title": "GS: Transferring Schools",
       "output": "knowledge/transferring-schools.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -121,7 +121,7 @@
     "form-i-20": {
       "title": "NS: Form I-20",
       "output": "knowledge/form-i-20.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -134,7 +134,7 @@
     "finances": {
       "title": "NS: Finances",
       "output": "knowledge/finances.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -147,7 +147,7 @@
     "tuition-and-cost-of-attendance": {
       "title": "NS: Tuition and Cost of Attendance",
       "output": "knowledge/tuition-and-cost-of-attendance.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -160,7 +160,7 @@
     "english-requirements": {
       "title": "NS: English Requirements",
       "output": "knowledge/english-requirements.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -173,7 +173,7 @@
     "step-by-step-application-process": {
       "title": "NS: Step by Step Application Process",
       "output": "knowledge/step-by-step-application-process.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {
@@ -186,7 +186,7 @@
     "academic-evaluation": {
       "title": "NS: Academic Evaluation",
       "output": "knowledge/academic-evaluation.md",
-      "last_refreshed": "2025-11-14T19:26:57Z",
+      "last_refreshed": "2025-11-14T19:58:04Z",
       "page_count": 1,
       "pages": [
         {

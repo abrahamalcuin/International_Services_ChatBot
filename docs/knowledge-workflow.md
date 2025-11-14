@@ -3,22 +3,23 @@
 ## Configure the sources
 
 1. Edit `knowledge/sources.json`.
-   - The repo includes a single sample entry (`new-students-admissions`) pointing to several admissions URLs. Duplicate that object to add your own.
+   - Duplicate the sample entry to add more documents.
    - Fields:
-     - `id`: unique handle for targeting runs.
-     - `title`: appears at the top of the generated Markdown.
-     - `output`: relative path to the Markdown file you want to populate.
-     - `urls`: list of BYUI pages to include (add as many as you want).
-     - `pathFragment` *(optional)*: ensures links include a specific path snippet (e.g., `/international-services/`).
+     - `id`: unique handle for targeting runs (e.g., `current-student`).
+     - `title`: shown at the top of the generated markdown file.
+     - `output`: relative path to the markdown file you want to populate.
+     - `urls`: list of BYU–Idaho pages to include.
+     - `pathFragment` *(optional)*: only allow URLs containing this snippet (e.g., `/international-services/`).
+     - `category` *(optional)*: used by the chatbot dropdown to filter documents.
 
 ## Refresh locally
 
 1. Install dependencies once: `python -m pip install -r requirements.txt`
-2. Run `npm run crawl` to fetch and regenerate every configured document.
-   - Use `npm run crawl -- --document overview` to refresh a single document by `id` or output filename.
-3. Commit the updated markdown plus `knowledge/manifest.json`.
+2. Run `npm run crawl` to regenerate every configured document.
+   - Target a single document with `npm run crawl -- --document current-student`.
+3. Commit the updated markdown files plus `knowledge/manifest.json`.
 
-Each markdown file receives only the rich-text body of the URLs you specified, so you control exactly where content lands and avoid duplicate boilerplate.
+Each markdown file only includes the rich-text body from URLs you specify, so you control what content ships to the chatbot.
 
 ## Optional GitHub Actions automation
 
@@ -45,4 +46,8 @@ jobs:
           commit_message: "chore: refresh international services knowledge"
 ```
 
-Hook your chatbot backend to read whichever markdown files you need (or the manifest) and you’ll always serve the latest curated knowledge.*** End Patch
+Hook your chatbot backend to whichever markdown files you need (or parse `knowledge/manifest.json`) and you'll always serve the freshest curated knowledge.
+
+## Gemini response guidelines
+
+The backend sends `knowledge/gemini-guidelines.md` to Gemini as its system prompt. Update that file whenever you want to adjust tone, citation expectations, or closing language, but keep the guidance about citing the supplied knowledge so answers stay grounded.
