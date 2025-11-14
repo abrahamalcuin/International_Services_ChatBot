@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 const ROOT_DIR = path.resolve(__dirname, '../../');
 const KNOWLEDGE_DIR = path.join(ROOT_DIR, 'knowledge');
 const SOURCES_PATH = path.join(KNOWLEDGE_DIR, 'sources.json');
